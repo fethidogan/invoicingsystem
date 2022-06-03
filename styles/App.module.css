@@ -1,0 +1,59 @@
+.welcome{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.appnavbar {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbarwelcome{
+    padding-right: 150px;
+}
+
+
+.appaddproduct{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.analyticstitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.analyticstitlegreen{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 10px;
+    color: rgb(12, 172, 25);
+}
+
+.appaddproductpara{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.appaddproductparagreen{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(12, 172, 25);
+}
+
+.appaddproductparared{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(172, 12, 12);
+}

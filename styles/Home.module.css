@@ -1,0 +1,859 @@
+/* Ana navbar */
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.loginform {
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+  width: 30vw;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 30px;
+}
+
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+
+  30% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+
+  65% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  80% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.swing:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+.navbarhireus {
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: -5px;
+  margin-left: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* navbarın sağ kısmı */
+.navright {
+  margin-right: 50px;
+}
+
+/* Sagdaki dropdownlar arası boşluk */
+.dropdownitem {
+  margin-right: 10px;
+}
+
+/* Sagdaki navbarın yazıları */
+.services {
+  color: rgb(71, 71, 71);
+}
+
+/* Dropdown itemlerini kapsar */
+.dropdownitems {
+  display: flex
+}
+
+/* sagdaki navbarın üzerine gelince animasyonu */
+.services:hover {
+  color: rgb(41, 76, 149);
+}
+
+
+/* App Bottle yazısı */
+.bottlelogo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: rgb(47, 47, 47);
+}
+
+/* Dropdown titles */
+.dropdowntitles {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+}
+
+.dropdowntitles:hover {
+  background-color: inherit;
+  cursor: context-menu;
+}
+
+.dropdowntexts {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(58, 58, 58);
+}
+
+/* change navbar links on hover services + expertise */
+.dropdowntexts:hover {
+  background-color: inherit;
+  color: rgb(41, 76, 149);
+  font-weight: 600;
+}
+
+/* middle mouse ile basıldıgında arka plan griligini önler */
+/* .dropdowntexts:focus{
+  background-color: inherit;
+  color: rgb(41, 76, 149);
+  font-weight: 600;
+} */
+
+
+.subtexts {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 35px;
+  color: rgb(117, 117, 117);
+}
+
+
+/* Heading Section*/
+
+.headingcontainer {
+  padding-right: 90px;
+  padding-top: 280px;
+  padding-bottom: 180px;
+}
+
+.logincontainer {
+  padding-right: 90px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.secondcontainer {
+  padding-right: 90px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pricingbottomcontainer {
+  padding-right: 90px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.thirdcontainer {
+  padding-right: 90px;
+  background-color: #d5e6ea;
+  padding-bottom: 180px;
+  box-shadow: 0px 0px 3px #6d6d6d;
+}
+
+.headone {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  margin-left: 25px;
+  color: rgb(47, 47, 47);
+  text-shadow: 0px 0px 0.8px rgba(49, 49, 49, 0.9)
+}
+
+.secondhead {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  margin-left: 25px;
+  text-align: center;
+  color: rgb(47, 47, 47);
+  text-shadow: 0px 0px 0.8px rgba(49, 49, 49, 0.9)
+}
+
+.secondpara {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(47, 47, 47);
+}
+
+.gridhead {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: left;
+  color: rgb(47, 47, 47);
+  text-shadow: 0px 0px 0.8px rgba(49, 49, 49, 0.9)
+}
+
+.gridpara {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  text-align: left;
+  color: rgb(47, 47, 47);
+}
+
+
+.headtwo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 25px;
+  line-height: 30px;
+  color: rgb(47, 47, 47);
+}
+
+.successtext {
+  color: rgb(47, 47, 47);
+  transition: color 0.3s ease-in-out;
+}
+
+.successtext:hover {
+  color: #0087ca;
+  transition: color 0.3s ease-in-out;
+}
+
+.cardsection {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+
+.headingbutton {
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 43px;
+  padding-right: 43px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+}
+
+.headerservice {
+  margin-top: 90px;
+}
+
+.headerweb {
+  margin-bottom: 50px;
+}
+
+.headermobile {
+  margin-bottom: 50px;
+}
+
+.headerstartup {
+  margin-bottom: 50px;
+}
+
+.headerserviceweb {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  text-align: left;
+  font-weight: 600;
+  color: #0047ca;
+}
+
+.headerservicemobile {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  text-align: left;
+  font-weight: 600;
+  color: #019546;
+}
+
+.headerservicestartup {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  text-align: left;
+  font-weight: 600;
+  color: #e46917;
+}
+
+.divisorweb {
+  color: #0080e9;
+  border: 2px solid;
+  background-color: #0080e9;
+  border-radius: 5px;
+}
+
+.divisormobile {
+  color: #019546;
+  border: 2px solid;
+  background-color: #019546;
+  border-radius: 5px;
+}
+
+.divisorstartup {
+  color: #e46917;
+  border: 2px solid;
+  background-color: #e46917;
+  border-radius: 5px;
+}
+
+.websubtitles {
+  background: linear-gradient(#0047ca 0 0) bottom left/ var(--underline-width, 0%) 0.1em no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: start;
+  transition: background-size 0.5s;
+  color: rgb(47, 47, 47);
+  cursor: pointer;
+}
+
+.websubtitles:hover {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: start;
+  color: #0047ca;
+  --underline-width: 80%;
+}
+
+.mobilesubtitles {
+  background: linear-gradient(#019546 0 0) bottom left/ var(--underline-width, 0%) 0.1em no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: start;
+  transition: background-size 0.5s;
+  color: rgb(47, 47, 47);
+  cursor: pointer;
+}
+
+.mobilesubtitles:hover {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: start;
+  color: #019546;
+  --underline-width: 80%;
+}
+
+.inneraelementmobile:hover {
+  color: #019546;
+}
+
+.inneraelementweb:hover {
+  color: #0047ca;
+}
+
+.inneraelementstartup:hover {
+  color: #e46917;
+}
+
+.startupsubtitles {
+  background: linear-gradient(#e46917 0 0) bottom left/ var(--underline-width, 0%) 0.1em no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: start;
+  transition: background-size 0.5s;
+  color: rgb(47, 47, 47);
+  cursor: pointer;
+}
+
+.startupsubtitles:hover {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: start;
+  color: #e46917;
+  --underline-width: 80%;
+}
+
+
+/* //////////////////////////////////////////////// */
+
+/* Case Studies */
+.casestudies {
+  margin-top: 150px;
+  margin-left: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(47, 47, 47);
+}
+
+.casestudiescontainer {
+  padding-bottom: 50px;
+}
+
+.casestudiescontainer:hover {
+  background-color: #bbbbbb23;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.casestudiesrightindustry {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #4586ff;
+  margin-bottom: 20px;
+}
+
+.casestudiesrighttitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: rgb(47, 47, 47);
+  margin-bottom: 15px;
+}
+
+.casestudiesrightcountry {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  color: rgb(47, 47, 47);
+  margin-bottom: 15px;
+}
+
+.casestudiesrightpara {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(47, 47, 47);
+  margin-bottom: 15px;
+}
+
+.casestudiesrightcountrytext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(47, 47, 47);
+}
+
+.casestudiesimage {
+  border-radius: 18px;
+}
+
+/* Specialized Section */
+
+.wespecialized {
+  margin-top: 100px;
+  padding-bottom: 50px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 0px 10px #dddddd;
+}
+
+.specializedheading {
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  letter-spacing: 4px;
+  color: rgb(54, 54, 54);
+}
+
+.specializedsubheading {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(54, 54, 54);
+}
+
+.specializedparalong {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(54, 54, 54);
+}
+
+.specializedparashort {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: rgb(54, 54, 54);
+}
+
+.specializedshowmore {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #0047ca;
+  cursor: pointer;
+}
+
+/* Refine the app section */
+
+.redefinecontainer {
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+
+.redefineheading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: start;
+  color: rgb(54, 54, 54);
+}
+
+.redefinepara {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  text-align: start;
+  color: rgb(54, 54, 54);
+}
+
+.strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  text-align: start;
+  color: rgb(54, 54, 54);
+}
+
+/* App development services */
+
+.appdevservices {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 33px;
+  color: rgb(54, 54, 54);
+  margin-bottom: 30px;
+}
+
+.appdevsevcontainer {
+  margin-bottom: 50px;
+}
+
+.appdevservtitles {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #363636;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.appdevservtitlesblue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #0047ca;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f3f3f3c7;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.appdevservtitles:hover {
+  color: #0047ca
+}
+
+.appdevservpara {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #363636;
+  line-height: 30px;
+}
+
+/* Technologies Section */
+
+.technologyheading {
+  padding-top: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: rgb(54, 54, 54);
+}
+
+.technologyheadingblue {
+  padding-top: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #0047ca;
+}
+
+.technologyparalong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: rgb(54, 54, 54);
+}
+
+.technologysubheading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(54, 54, 54);
+  padding-top: 15px;
+}
+
+.technologyboxes {
+  background-color: #f8f9fa;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologyparatitles {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(54, 54, 54);
+}
+
+.technologytitlecontainer {
+  background-color: #f2f9ff96;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.technologytitlecontainernonselect {
+  cursor: pointer;
+}
+
+.technologytitlecontainer:hover {
+  background-color: #f2f9ff96;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+/* Footer */
+.footercontainer {
+  margin-top: 10px;
+  background-color: #0047ca;
+}
+
+.footerwave {
+  margin-left: -50px;
+  margin-top: -160px;
+  z-index: -1;
+}
+
+.footertitles {
+  font-weight: 500;
+  font-size: 24px;
+  color: #ececec;
+  margin-bottom: 10px;
+}
+
+.footerparas {
+  font-family: 'Montserrat', sans-serif;
+  color: #cccccc;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.footerparas:hover {
+  color: #ffffff;
+}
+
+
+.footersocialmargins {
+  font-family: 'Montserrat', sans-serif;
+  color: #cccccc;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footersocialmargins:hover {
+  color: #868686;
+}
+
+.footersocialfirst {
+  font-family: 'Montserrat', sans-serif;
+  color: #cccccc;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footersocialfirst:hover {
+  color: #868686;
+}
+
+
+.footercontainer {
+  position: absolute;
+  margin-top: -10px;
+}
+
+.footercontactbutton {
+  border-radius: 30px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 43px;
+  padding-right: 43px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: #202020;
+  background-color: #dfe5e1;
+}
+
+
+.footerformcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin-top: -250px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 13px #b6b6b6;
+  background-color: #ffffff;
+}
+
+.footercontacttitles {
+  font-family: 'Montserrat', sans-serif;
+  color: #cccccc;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.footerheadertitle {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 60px;
+  letter-spacing: 3px;
+  color: rgb(54, 54, 54);
+}
+
+.footerblog {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+/* Portfolio Page */
+.portfoliocontainer {
+  margin-top: 130px;
+}
+
+/* Mobile  */
+@media only screen and (max-width: 1200px) {
+  .dropdowntitles {
+    display: none;
+  }
+
+  .services {
+    margin-left: 0px;
+    font-size: 23px;
+  }
+
+  .dropdownitems {
+    display: block;
+  }
+
+  .subtexts {
+    display: none;
+  }
+
+  .casestudiesimage {
+    width: 330px;
+    height: 230px;
+  }
+
+  .specializedheading {
+    font-size: 35px;
+  }
+
+
+  .footerheadertitle {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: rgb(54, 54, 54);
+  }
+
+
+  .technologyheading {
+    padding-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(54, 54, 54);
+  }
+
+  .technologyheadingblue {
+    padding-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #0047ca;
+  }
+
+  /* Heading */
+
+  .headone {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(47, 47, 47);
+  }
+
+  .headingcontainer {
+    margin-top: 100px;
+  }
+
+}
