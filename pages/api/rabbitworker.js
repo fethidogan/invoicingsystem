@@ -1,30 +1,43 @@
-
-const queue = 'csv-task';
 const fs = require("fs")
 const dotenv = require('dotenv');
 dotenv.config();
-const open = require('amqplib').connect(process.env.RABBIT);
 
-// Publisher
-const publishMessage = payload => open.then(connection => connection.createChannel())
-    .then(channel => channel.assertQueue(queue)
-        .then(() => channel.sendToQueue(queue, Buffer.from(JSON.stringify(payload)))))
-    .catch(error => console.warn(error));
+const queue = 'csv-task';
+const amqp = require('amqplib')
+
+const publishMessage = async (data) => {
+    try {
+        const connection = await amqp.connect(process.env.RABBIT)
+        const channel = await connection.createChannel()
+        const assertion = await channel.assertQueue(queue)
+
+        channel.sendToQueue(queue, Buffer.from(JSON.stringify(data)))
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 // Consumer
-const consumeMessage = () => {
-    open.then(connection => connection.createChannel()).then(channel => channel.assertQueue(queue).then(() => {
-        console.log(' [*] Waiting for messages in %s. To exit press CTRL+C', queue);
-        return channel.consume(queue, async (msg) => {
-            if (msg !== null) {
-                const filetext = msg.content.toString()
-                await fs.writeFile('D:/doneprojects/sellproject/public/testcsv.csv', filetext);
-                channel.ack(msg);
-            }
-        });
-    })).catch(error => console.warn(error));
-};
+const consumeMessage = async () => {
+    try {
+        const connection = await amqp.connect(process.env.RABBIT)
+        const channel = await connection.createChannel()
+        const assertion = await channel.assertQueue(queue)
 
+        channel.consume(queue, async (message) => {
+            const { msg } = JSON.parse(message.content.toString())
+            await fs.writeFile('D:/doneprojects/sellproject/public/testcsv.csv', msg, (err, result) => {
+                if (err) console.log(err)
+            });
+            channel.ack(message)
+            
+        })
+
+    } catch (error) {
+        console.log(error)
+    }
+    return "success"
+};
 module.exports = {
     publishMessage,
     consumeMessage

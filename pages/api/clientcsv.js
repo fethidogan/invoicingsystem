@@ -6,7 +6,7 @@ import { isAuth } from "../../utils/auth"
 import path from 'path'
 
 const handler = nc();
-const { publishMessage } = require("./rabbitworker")
+const { publishMessage, consumeMessage } = require("./rabbitworker")
 
 handler.use(isAuth).get(async (req, res) => {
     await dbConnect()
@@ -34,9 +34,13 @@ handler.use(isAuth).get(async (req, res) => {
         .map(e => e.join(","))
         .join("\n");
 
-    publishMessage(csvString)
+    const sendData = {
+        msg : csvString
+    }
+
+    await publishMessage(sendData)
+    await consumeMessage()
     
-    // await fs.writeFile('D:/doneprojects/sellproject/public/testcsv.csv', csvString);
     return res.send({ url: "testcsv.csv" })
 
 })
